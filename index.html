@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon shorcut" href="./img/film-ree.png">
+    <title>Movies Modal</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="top__btn">
+          <h1 class="text-center m-0 mt-3 ms-auto me-auto">Movies</h1>
+        </div>
+        <div class="col-3 ps-0">
+          <form class="js-form ms-auto me-auto mt-3" action="https://echo.htmlacademy.ru">
+            
+                    <div class="w-100">
+                        <p class="m-0 ms-2 text-primary">
+                          Search:
+                          <span class="js-results-2">
+                          </span>
+                        </p>
+                        <input class="js-input ps-2 w-100 rounded-3 py-2" type="search" placeholder="Search" />
+                      </div>
+                      
+                      <div class="w-100">
+                        <p class="m-0 ms-2 text-primary"> Genres:
+                          <span class="js-results">
+                          </span>
+                        </p>
+                        <select class="js-select w-100  rounded-3" style="height: 40px;">
+                          <option value="all">All</option>
+                        </select>
+                      </div>
+                      
+                      <div class="w-100">
+                        <p class="m-0 ms-2 text-primary"  >
+                          Raiting:
+                          <span class="js-results-3">
+                          </span>
+                        </p>
+                        <input class="js-raiting ps-2 w-100 fw-bold rounded-3 py-2" type="number" placeholder="Raiting" />
+                      </div>
+                      
+                    <div class="w-100">
+                      <p class="m-0 ms-2  text-primary"> AZ - ZA:
+                        <span class="js-results-4">
+                        </span>
+                      </p>
+                      <select class="js-select w-100 fw-bold rounded-3 py-2" >
+                        <option value="az">AA-ZZ</option>
+                        <option value="az">ZZ-AA</option>
+                      </select>
+                    </div>
+                  </form>
+                  <h2 class="h2 mb-0 mt-3 alert fs-4 alert-info mb-1">Bookmark movies</h2>
+                  <ul class="js-list-mark rounded ps-0 h-100" style="width: 300px;">
+
+                  </ul>
+                  </div>
+                  
+                  
+                  <div class="col-9" style="margin-top: 40px;">
+                    <ul class="js-list list-unstyled mt-3 d-flex flex-wrap justify-content-around">
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </ul>
+                  </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+    
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/utilis.js"></script>
+    <script src="./js/films.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
